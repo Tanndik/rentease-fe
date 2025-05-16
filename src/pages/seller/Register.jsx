@@ -37,7 +37,7 @@ function SellerRegister() {
     setLoading(true);
     
     try {
-      const response = await fetch('https://rentease-be.vercel.app/api/auth/register', {
+      const response = await fetch('https://rentease-be-production.up.railway.app/api/auth/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

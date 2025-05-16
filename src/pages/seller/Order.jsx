@@ -23,7 +23,7 @@ export default function OrderSection() {
         selectedStatus !== "ALL" ? `?status=${selectedStatus}` : "";
 
       const response = await fetch(
-        `https://rentease-be.vercel.app/api/orders/seller${queryParam}`,
+        `https://rentease-be-production.up.railway.app/api/orders/seller${queryParam}`,
         {
           method: "GET",
           headers: {
@@ -74,7 +74,7 @@ export default function OrderSection() {
       const token = localStorage.getItem("token");
 
       const response = await fetch(
-        `https://rentease-be.vercel.app/api/orders/${orderId}/status`,
+        `https://rentease-be-production.up.railway.app/api/orders/${orderId}/status`,
         {
           method: "PUT",
           headers: {

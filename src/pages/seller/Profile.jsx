@@ -25,7 +25,7 @@ function ProfileSection() {
   const fetchUserProfile = async () => {
     try {
       const token = localStorage.getItem("token");
-      const response = await fetch("https://rentease-be.vercel.app/api/users/me", {
+      const response = await fetch("https://rentease-be-production.up.railway.app/api/users/me", {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -60,7 +60,7 @@ function ProfileSection() {
 
     try {
       const token = localStorage.getItem("token");
-      const response = await fetch("https://rentease-be.vercel.app/api/users/me", {
+      const response = await fetch("https://rentease-be-production.up.railway.app/api/users/me", {
         method: "PUT",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -97,7 +97,7 @@ function ProfileSection() {
     try {
       const token = localStorage.getItem("token");
       const response = await fetch(
-        "https://rentease-be.vercel.app/api/users/me/password",
+        "https://rentease-be-production.up.railway.app/api/users/me/password",
         {
           method: "PUT",
           headers: {

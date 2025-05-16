@@ -24,7 +24,7 @@ function CustomerLogin() {
     setLoading(true);
     
     try {
-      const response = await fetch('https://rentease-be.vercel.app/api/auth/login', {
+      const response = await fetch('hhttps://rentease-be-production.up.railway.app/api/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

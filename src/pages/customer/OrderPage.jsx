@@ -20,7 +20,7 @@ const OrdersPage = () => {
       const token = localStorage.getItem("token");
       const endpoint = userRole === "SELLER" ? "/seller" : "/customer";
       
-      const response = await fetch(`https://rentease-be.vercel.app/api/orders${endpoint}`, {
+      const response = await fetch(`https://rentease-be-production.up.railway.app/api/orders${endpoint}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -42,7 +42,7 @@ const OrdersPage = () => {
   const handleStatusUpdate = async (orderId, newStatus) => {
     try {
       const token = localStorage.getItem("token");
-      const response = await fetch(`https://rentease-be.vercel.app/api/orders/${orderId}/status`, {
+      const response = await fetch(`https://rentease-be-production.up.railway.app/api/orders/${orderId}/status`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

@@ -25,7 +25,7 @@ const OrderDetailPage = () => {
   const fetchOrderDetails = async () => {
     try {
       const token = localStorage.getItem("token");
-      const response = await fetch(`https://rentease-be.vercel.app/api/orders/${id}`, {
+      const response = await fetch(`https://rentease-be-production.up.railway.app/api/orders/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -58,7 +58,7 @@ const OrderDetailPage = () => {
       console.log(`Fetching payment details for order: ${orderId}`);
 
       const response = await fetch(
-        `https://rentease-be.vercel.app/api/payments/${orderId}/details`,
+        `https://rentease-be-production.up.railway.app/api/payments/${orderId}/details`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -131,7 +131,7 @@ const OrderDetailPage = () => {
     try {
       const token = localStorage.getItem("token");
       const response = await fetch(
-        `https://rentease-be.vercel.app/api/orders/${id}/status`,
+        `https://rentease-be-production.up.railway.app/api/orders/${id}/status`,
         {
           method: "PUT",
           headers: {
@@ -160,7 +160,7 @@ const OrderDetailPage = () => {
 
     try {
       const token = localStorage.getItem("token");
-      const response = await fetch(`https://rentease-be.vercel.app/api/messages`, {
+      const response = await fetch(`https://rentease-be-production.up.railway.app/api/messages`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
