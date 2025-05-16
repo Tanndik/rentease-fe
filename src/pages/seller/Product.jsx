@@ -28,9 +28,9 @@ function ProductSection() {
         throw new Error("Authentication token not found. Please log in again.");
       }
 
-      console.log("Fetching cars from: http://localhost:5000/api/cars/my-cars");
+      console.log("Fetching cars from: https://rentease-be.vercel.app/api/cars/my-cars");
 
-      const response = await fetch("http://localhost:5000/api/cars/my-cars", {
+      const response = await fetch("https://rentease-be.vercel.app/api/cars/my-cars", {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -72,7 +72,7 @@ function ProductSection() {
       console.log("New Car Data:", newCar);
 
       // Use JSON instead of FormData for initial debugging
-      const response = await fetch("http://localhost:5000/api/cars", {
+      const response = await fetch("https://rentease-be.vercel.app/api/cars", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,

@@ -22,7 +22,7 @@ function SellerDashboard() {
     // Fetch user data
     const fetchUserData = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/users/me", {
+        const response = await fetch("https://rentease-be.vercel.app/api/users/me", {
           method: "GET",
           headers: {
             Authorization: `Bearer ${token}`,

@@ -25,7 +25,7 @@ const ProductsSection = () => {
   const fetchProducts = async () => {
     try {
       const token = localStorage.getItem("token");
-      const response = await fetch("http://localhost:5000/api/cars", {
+      const response = await fetch("https://rentease-be.vercel.app/api/cars", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
