@@ -10,21 +10,8 @@ const HomePage = () => {
           <div className="flex justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0 flex items-center">
-                <img className="h-8 w-auto" src="/api/placeholder/200/80" alt="RentEase Logo" />
+                <img className="h-12 w-auto" src="/logo.png" alt="RentEase Logo" />
                 <span className="ml-2 text-xl font-bold text-blue-600">RentEase</span>
-              </div>
-            </div>
-            <div className="flex items-center">
-              <div className="hidden md:ml-6 md:flex md:space-x-8">
-                <Link to="/" className="border-b-2 border-blue-500 text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">
-                  Home
-                </Link>
-                <Link to="/about" className="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 inline-flex items-center px-1 pt-1 text-sm font-medium">
-                  About
-                </Link>
-                <Link to="/contact" className="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 inline-flex items-center px-1 pt-1 text-sm font-medium">
-                  Contact
-                </Link>
               </div>
             </div>
             <div className="flex items-center gap-4">
@@ -52,7 +39,7 @@ const HomePage = () => {
               </p>
             </div>
             <div className="md:w-1/2 py-8 flex justify-center">
-              <img className="max-w-full rounded-lg shadow-xl" src="/api/placeholder/600/400" alt="Luxury car" />
+              <img className="max-w-full rounded-lg shadow-xl" src="/mobil1.png" alt="Luxury car" />
             </div>
           </div>
         </div>
@@ -114,7 +101,7 @@ const HomePage = () => {
               </div>
             </div>
             <div className="md:w-1/2 py-8 flex justify-center">
-              <img className="max-w-full rounded-lg shadow-xl" src="/api/placeholder/600/400" alt="Car owner with keys" />
+              <img className="max-w-full rounded-lg shadow-xl" src="/mobil2.png" alt="Car owner with keys" />
             </div>
           </div>
         </div>
@@ -127,7 +114,7 @@ const HomePage = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <div className="flex items-center mb-4">
-                <img className="h-12 w-12 rounded-full" src="/api/placeholder/80/80" alt="User avatar" />
+                <img className="h-12 w-12 rounded-full" src="/avatar.png" alt="User avatar" />
                 <div className="ml-4">
                   <h3 className="text-lg font-semibold">Budi Santoso</h3>
                   <div className="flex text-yellow-400">
@@ -143,7 +130,7 @@ const HomePage = () => {
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <div className="flex items-center mb-4">
-                <img className="h-12 w-12 rounded-full" src="/api/placeholder/80/80" alt="User avatar" />
+                <img className="h-12 w-12 rounded-full" src="/avatar.png" alt="User avatar" />
                 <div className="ml-4">
                   <h3 className="text-lg font-semibold">Siti Nurhayati</h3>
                   <div className="flex text-yellow-400">
@@ -159,7 +146,7 @@ const HomePage = () => {
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <div className="flex items-center mb-4">
-                <img className="h-12 w-12 rounded-full" src="/api/placeholder/80/80" alt="User avatar" />
+                <img className="h-12 w-12 rounded-full" src="/avatar.png" alt="User avatar" />
                 <div className="ml-4">
                   <h3 className="text-lg font-semibold">Agus Wibowo</h3>
                   <div className="flex text-yellow-400">
@@ -208,7 +195,7 @@ const HomePage = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center mb-4">
-                <img className="h-8 w-auto" src="/api/placeholder/200/80" alt="RentEase Logo" />
+                <img className="h-8 w-auto" src="/logo.png" alt="RentEase Logo" />
                 <span className="ml-2 text-xl font-bold text-white">RentEase</span>
               </div>
               <p className="text-gray-300 mb-4">Making car rental simple, secure, and affordable across Indonesia.</p>

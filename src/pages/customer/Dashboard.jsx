@@ -17,7 +17,7 @@ const CustomerDashboard = () => {
   };
 
   return (
-    <div className="flex h-screen">
+    <div className="flex h-screen w-screen">
       {/* Sidebar Navigation */}
       <div className="w-64 bg-gray-800 text-white p-6">
         <h1 className="text-2xl font-bold mb-10">Customer Dashboard</h1>
@@ -63,7 +63,7 @@ const CustomerDashboard = () => {
       </div>
 
       {/* Main Content Area */}
-      <div className="flex-1 bg-gray-100 overflow-y-auto">
+      <div className="flex-1 bg-gray-100 overflow-y-auto w-full">
         {activeSection === "profile" && <ProfileSection />}
         {activeSection === "products" && <ProductSection />}
         {activeSection === "orders" && <OrderSection />}

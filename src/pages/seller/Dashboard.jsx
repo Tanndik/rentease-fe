@@ -66,7 +66,7 @@ function SellerDashboard() {
   };
 
   return (
-    <div className="flex h-screen bg-gray-100">
+    <div className="flex h-screen w-screen bg-gray-100">
       {/* Sidebar Navigation */}
       <div className="w-64 bg-white shadow-md">
         <div className="p-6 border-b">
