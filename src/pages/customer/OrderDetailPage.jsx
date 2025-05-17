@@ -309,7 +309,7 @@ const OrderDetailPage = () => {
             <div>
               <p className="text-gray-600">Total Price</p>
               <p className="font-semibold text-lg">
-                ${order.totalPrice.toLocaleString()}
+                Rp. {order.totalPrice.toLocaleString()}
               </p>
             </div>
 
@@ -401,7 +401,7 @@ const OrderDetailPage = () => {
                   <div>
                     <p className="font-medium">Amount to Pay</p>
                     <p className="text-lg">
-                      Rp{" "}
+                      Rp. {" "}
                       {parseInt(
                         paymentDetails.gross_amount || "0"
                       ).toLocaleString()}
@@ -481,7 +481,7 @@ const OrderDetailPage = () => {
             <div>
               <p className="text-gray-600">Daily Rate</p>
               <p className="font-medium">
-                ${order.car.price.toLocaleString()} / day
+                Rp. {order.car.price.toLocaleString()} / day
               </p>
             </div>
           </div>

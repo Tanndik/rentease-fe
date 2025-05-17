@@ -305,7 +305,7 @@ export default function OrderSection() {
                     </div>
 
                     <p className="mt-3 text-blue-600 font-bold text-xl">
-                      Rp {order.totalPrice.toLocaleString()}
+                      Rp. {order.totalPrice.toLocaleString()}
                     </p>
                   </div>
                 </div>

@@ -181,8 +181,8 @@ function ProductSection() {
               </p>
               <p className="text-blue-600 font-bold mt-2">
                 {typeof car.price === "number"
-                  ? `Rp ${car.price.toLocaleString()}`
-                  : `Rp ${car.price}`}
+                  ? `Rp. ${car.price.toLocaleString()}`
+                  : `Rp. ${car.price}`}
               </p>
               <p className="text-sm text-gray-500 mt-2">{car.description}</p>
               <div className="mt-2">

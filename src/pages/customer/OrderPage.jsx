@@ -147,7 +147,7 @@ const OrdersPage = () => {
                     </div>
                   </td>
                   <td className="p-3">
-                    ${order.totalPrice.toLocaleString()}
+                    Rp. {order.totalPrice.toLocaleString()}
                   </td>
                   <td className="p-3">
                     <span className={`px-2 py-1 rounded text-xs ${getStatusBadgeColor(order.status)}`}>

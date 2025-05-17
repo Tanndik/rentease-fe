@@ -120,11 +120,11 @@ const OrderForm = ({ car, onClose }) => {
           </div>
           <div className="flex justify-between">
             <span>Price per day:</span>
-            <span>${car.price.toLocaleString()}</span>
+            <span>Rp. {car.price.toLocaleString()}</span>
           </div>
           <div className="flex justify-between font-bold text-lg mt-2">
             <span>Total Price:</span>
-            <span>${totalPrice.toLocaleString()}</span>
+            <span>Rp. {totalPrice.toLocaleString()}</span>
           </div>
         </div>
         

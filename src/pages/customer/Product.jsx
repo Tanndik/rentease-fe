@@ -152,7 +152,7 @@ const ProductsSection = () => {
             <p className="text-gray-600">Year: {product.year}</p>
             <p className="text-gray-600">Model: {product.model}</p>
             <p className="font-bold text-blue-600">
-              Price: ${product.price.toLocaleString()}/day
+              Price: Rp. {product.price.toLocaleString()}/day
             </p>
             <button 
               className="mt-4 w-full bg-blue-500 text-white p-2 rounded"
